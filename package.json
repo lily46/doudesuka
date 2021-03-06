@@ -1,0 +1,18 @@
+{
+  "name": "kakeibokun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "chcp 65001 && electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv": "^5.3.2",
+    "electron": "^11.2.3",
+    "glob": "^7.1.6",
+    "jquery": "^3.6.0"
+  }
+}

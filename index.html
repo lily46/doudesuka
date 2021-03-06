@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>どうですか</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./bootstrap-treeview.css">
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script>
+    delete module.exports
+  </script><script type="text/javascript">
+    window.$ = window.jQuery = require('jquery');
+  </script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="bootstrap-treeview.js"></script>
+  
+  
+  </head>
+
+<body>
+  <div id="container" class="container-fluid">
+
+    <!-- Input row -->
+    <div class="row">
+
+      <!-- モーダル・ダイアログ -->
+      <div class="modal fade" id="newTaskWindow" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="taskParentInput">
+                Parent
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" id="taskList">
+              </ul>
+            </div>
+            <input type="text" class="form-control" placeholder="タスク名" id="taskNameInput" placeholder="name">
+            <input type="text" class="form-control" placeholder="タスク補足" id="taskCommentInput" placeholder="comment">
+            <input type="text" class="form-control" placeholder="工数" id="taskHourInput" placeholder="number" value="1">
+            
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+              <button type="button" class="btn btn-primary" id="addTask">追加</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- モーダル・ダイアログ -->
+      <div class="modal fade" id="sampleModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+              <h4 class="modal-title" id="task_name"></h4>
+            </div>
+            <div class="modal-body">
+              <h3 id="task_comment"></h3>
+              <h5 id="task_state"></h5>
+            </div>
+            <div class="modal-footer">
+              <h5 id="task_hour"></h5>
+              <h5 id="task_limit"></h5>
+              <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+              <button type="button" class="btn btn-primary">ボタン</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+        <button class="button" id="make">Output</button><br>
+        <button class="button" id="newTaskButton">New</button><br>
+          <div id="tasks">
+          </div>
+          <div id="tree"></div>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script src="./window.js" charset="utf-8"></script>
+</html>

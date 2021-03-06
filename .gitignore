@@ -1,0 +1,17 @@
+Logs/
+Temp/
+tmp/
+Release/
+Library/
+node_modules/
+.DS_Store
+*.apk
+*.csv
+obj/
+.vs/FruitPuzzle/v15/.suo
+.vs/FruitPuzzle/v15/Server/sqlite3/storage.ide-shm
+.vs/FruitPuzzle/v15/Server/sqlite3/storage.ide-wal
+obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
+obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
+.vs/FruitPuzzle/v15/Server/sqlite3/db.lock
+.vs/FruitPuzzle/v15/Server/sqlite3/storage.ide
